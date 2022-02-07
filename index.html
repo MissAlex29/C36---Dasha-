@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- Encabezado, aquí se agregan todos los scripts
+     y stylesheets de la página-->
+<head>
+    <meta charset="utf-8" />
+    <title>Speed Racer</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <!-- p5.dom nos ayudara a crear el formulario-->
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+    <script>
+      const firebaseConfig = {   
+        apiKey: "AIzaSyB0-Dz2g_qYsf8LSwQ1_09j2ttlm0cMMSc",   
+        authDomain: "carreradeatutos.firebaseapp.com",   
+        databaseURL: "https://carreradeatutos-default-rtdb.firebaseio.com",   
+        projectId: "carreradeatutos",   storageBucket: "carreradeatutos.appspot.com",  
+        messagingSenderId: "300627398192",   
+        appId: "1:300627398192:web:9991ab5c3c3aa2c3f427f5" };
+      // Inicia Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+<!-- Cuerpo: donde se agrega todo el contenido de la página-->  
+  <body>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
